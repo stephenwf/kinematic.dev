@@ -22,7 +22,7 @@ export const ViewFile: FC<{ id: string; sha: string }> = ({ id, sha }) => {
 
   useLayoutEffect(() => {
     if (iframe.current) {
-      const hostUrl = found ? new URL(found.loader) : new URL(window.location.host);
+      const hostUrl = found ? new URL(found.loader) : new URL(`${window.location.protocol}//${window.location.host}`);
       // @todo use origin from config.
       host.createSession(iframe.current, `${hostUrl.protocol}//${hostUrl.host}`).then((sess) => {
         setSession(sess);
@@ -47,7 +47,7 @@ export const ViewFile: FC<{ id: string; sha: string }> = ({ id, sha }) => {
       sandbox="allow-forms allow-scripts allow-same-origin"
       style={{ border: 'none', width: '100%', height: '100%' }}
       ref={iframe as any}
-      src={found?.loader || window.location.host + '/frames/echo-frame'}
+      src={found?.loader || (`${window.location.protocol}//${window.location.host}`) + '/frames/echo-frame'}
     />
   );
 };
