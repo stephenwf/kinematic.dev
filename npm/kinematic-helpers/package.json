@@ -1,0 +1,16 @@
+{
+  "name": "@kinematic.dev/helpers",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "web": "dist/index.umd.js",
+  "typings": "dist/helpers.d.ts",
+  "author": "Stephen Fraser <stephen.fraser@digirati.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

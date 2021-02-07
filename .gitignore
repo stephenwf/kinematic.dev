@@ -1,0 +1,9 @@
+node_modules
+lib
+*.log
+schemas/*
+!schemas/.gitkeep
+.env
+npm/*/dist
+var
+kinematic-demos

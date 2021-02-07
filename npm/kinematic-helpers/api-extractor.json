@@ -1,0 +1,42 @@
+{
+  "projectFolder": "../../",
+  "mainEntryPointFilePath": "<projectFolder>/lib/npm/helpers/index.d.ts",
+  "bundledPackages": [],
+  "compiler": {
+    "tsconfigFilePath": "<projectFolder>/tsconfig.json"
+  },
+  "apiReport": {
+    "enabled": true,
+    "reportFolder": "<projectFolder>/npm/kinematic-helpers/docs",
+    "reportTempFolder": "<projectFolder>/var/temp/"
+  },
+  "docModel": {
+    "enabled": false,
+    "apiJsonFilePath": "<projectFolder>/npm/kinematic-helpers/dist/<unscopedPackageName>.api.json"
+  },
+  "dtsRollup": {
+    "enabled": true,
+    "untrimmedFilePath": "<projectFolder>/npm/kinematic-helpers/dist/<unscopedPackageName>.d.ts"
+  },
+  "tsdocMetadata": {
+    "enabled": true,
+    "tsdocMetadataFilePath": "<projectFolder>/npm/kinematic-helpers/dist/tsdoc-metadata.json"
+  },
+  "messages": {
+    "compilerMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    },
+    "extractorMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    },
+    "tsdocMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    }
+  }
+}
